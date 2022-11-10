@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:hivefirst/screens/home/widgets/edit_student.dart';
+
+import 'edit_student.dart';
 
 class FullDetails extends StatelessWidget {
   const FullDetails({

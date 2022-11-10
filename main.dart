@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:hivefirst/db/model/data_model.dart';
-import 'package:hivefirst/screens/home/screen_home.dart';
+
+import 'db/model/data_model.dart';
+import 'screens/home/screen_home.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

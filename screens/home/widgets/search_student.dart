@@ -1,9 +1,9 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:hivefirst/db/functions/db_functions.dart';
-import 'package:hivefirst/screens/home/widgets/student_full_details.dart';
 
+import '../../../db/functions/db_functions.dart';
 import '../../../db/model/data_model.dart';
+import 'student_full_details.dart';
 
 class Search extends SearchDelegate {
   @override

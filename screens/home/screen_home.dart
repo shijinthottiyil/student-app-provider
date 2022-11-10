@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hivefirst/screens/home/widgets/add_student.dart';
-import 'package:hivefirst/screens/home/widgets/list_student.dart';
-import 'package:hivefirst/screens/home/widgets/search_student.dart';
 
 import '../../db/functions/db_functions.dart';
+import 'widgets/add_student.dart';
+import 'widgets/list_student.dart';
+import 'widgets/search_student.dart';
 
 class ScreenHome extends StatelessWidget {
   const ScreenHome({Key? key}) : super(key: key);

@@ -14,10 +14,11 @@ class StudentModel {
   @HiveField(4)
   final String photo;
 
-  StudentModel(
-      {required this.name,
-      required this.age,
-      required this.phone,
-      required this.place,
-      required this.photo,});
+  StudentModel({
+    required this.name,
+    required this.age,
+    required this.phone,
+    required this.place,
+    required this.photo,
+  });
 }

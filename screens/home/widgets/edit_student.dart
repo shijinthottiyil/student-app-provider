@@ -1,8 +1,10 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:hivefirst/db/functions/db_functions.dart';
-import 'package:hivefirst/db/model/data_model.dart';
+
 import 'package:image_picker/image_picker.dart';
+
+import '../../../db/functions/db_functions.dart';
+import '../../../db/model/data_model.dart';
 
 class EditStudent extends StatefulWidget {
   EditStudent(
