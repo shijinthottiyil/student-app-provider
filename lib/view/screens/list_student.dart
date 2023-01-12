@@ -1,18 +1,13 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../../controller/provider/provider_liststudent.dart';
+import '../../db/functions/db_functions.dart';
+import '../../db/model/data_model.dart';
 
-import '../../../db/functions/db_functions.dart';
-import '../../../db/model/data_model.dart';
-import 'student_full_details.dart';
-
-class ListStudent extends StatefulWidget {
+class ListStudent extends StatelessWidget {
   const ListStudent({Key? key}) : super(key: key);
 
-  @override
-  State<ListStudent> createState() => _ListStudentState();
-}
-
-class _ListStudentState extends State<ListStudent> {
   @override
   Widget build(
     BuildContext context,
@@ -48,17 +43,15 @@ class _ListStudentState extends State<ListStudent> {
                   ),
                 ),
                 onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: ((context) => FullDetails(
-                            name: data.name,
-                            age: data.age,
-                            phone: data.phone,
-                            place: data.place,
-                            photo: data.photo,
-                            index: index,
-                          )),
-                    ),
+                  Provider.of<ProviderListStudent>(context, listen: false)
+                      .gotoFullDetails(
+                    context,
+                    data.name,
+                    data.age,
+                    data.phone,
+                    data.place,
+                    data.photo,
+                    index,
                   );
                 },
               );
